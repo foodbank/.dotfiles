@@ -5,7 +5,12 @@
 * npm
 * php 7+
 
-# osx
+# Install
+1. git clone --recursive https://github.com/foodbank/.dotfiles.git
+2. cd ~/.dotfiles
+3. make build
+
+# osx user
 1. xcode-select --install
 2. brew install bash-completion git node tmux byobu
 3. npm -g install gulp instant-markdown-d
@@ -19,13 +24,8 @@
 6. valet install
 7. valet restart
 
-# Linux user
+# linux user
 * apt-get install git make
-
-# Installation
-* git clone --recursive https://github.com/foodbank/.dotfiles.git
-* cd ~/.dotfiles
-* make build
 
 # root (manual)
 * ln -s ~User/.vim .
@@ -34,8 +34,8 @@
 * ln -s ~User/.vim/.sqliterc ~/.sqliterc
 * ln -s ~User/.vim/.bash_profile .profile
 
-# Update personal config
-1. Git config ~/.gitconfig
+# Update config
+1. Update github config ~/.gitconfig
 2. Create github access [tokens](https://github.com/settings/tokens) open ~/.bash_profile file found HOMEBREW_GITHUB_API_TOKEN pasted it!
 
 # Chrome extension
