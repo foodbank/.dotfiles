@@ -1,30 +1,29 @@
-# Requirements
+# Require
 * xcode 8.x
 * [homebrew](http://mxcl.github.com/homebrew/)
-* node5+
+* node 5+
 * npm
-* php7+
+* php 7+
 
 # osx
-* xcode-select --install
-* /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-* brew install bash-completion git node tmux byobu
-* npm -g install gulp instant-markdown-d
+1. xcode-select --install
+2. brew install bash-completion git node tmux byobu
+3. npm -g install gulp instant-markdown-d
 
 # Laravel developer
-* brew install php70 --with-fpm
-* brew install composer
-* composer global require laravel/installer
-* composer global require laravel/valet
-* composer global require [hirak/prestissimo](https://github.com/hirak/prestissimo)
-* valet install
-* valet restart
+1. brew install php70 --with-fpm
+2. brew install composer
+3. composer global require [laravel/installer](https://github.com/laravel/installer)
+4. composer global require [laravel/valet](https://github.com/laravel/valet)
+5. composer global require [hirak/prestissimo](https://github.com/hirak/prestissimo)
+6. valet install
+7. valet restart
 
-# Linux
+# Linux user
 * apt-get install git make
 
 # Installation
-* git clone --recursive https://github.com/m0neyball/.dotfiles.git
+* git clone --recursive https://github.com/foodbank/.dotfiles.git
 * cd ~/.dotfiles
 * make build
 
@@ -35,9 +34,9 @@
 * ln -s ~User/.vim/.sqliterc ~/.sqliterc
 * ln -s ~User/.vim/.bash_profile .profile
 
-# personal config
-* ADD personal git config ~/.gitconfig
-* ADD homebrew Github personal access [tokens](https://github.com/settings/tokens) in ~/.bash_profile found HOMEBREW_GITHUB_API_TOKEN add
+# Update personal config
+1. Git config ~/.gitconfig
+2. Create github access [tokens](https://github.com/settings/tokens) open ~/.bash_profile file found HOMEBREW_GITHUB_API_TOKEN pasted it!
 
 # Chrome extension
 * [inbox-by-gmail](https://chrome.google.com/webstore/detail/inbox-by-gmail/gkljgfmjocfalijkgoogmfffkhmkbgol)
