@@ -17,7 +17,7 @@
 
 # Laravel developer
 1. brew install homebrew/php/php70 --with-fpm
-2. brew install composer
+2. brew install homebrew/php/composer
 3. composer global require [laravel/installer](https://github.com/laravel/installer)
 4. composer global require [laravel/valet](https://github.com/laravel/valet)
 5. composer global require [hirak/prestissimo](https://github.com/hirak/prestissimo)
