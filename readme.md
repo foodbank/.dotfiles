@@ -16,13 +16,35 @@
 3. npm -g install gulp instant-markdown-d
 
 # Laravel developer
-1. brew install homebrew/php/php71 --with-fpm
-2. brew install homebrew/php/composer
-3. composer global require [laravel/installer](https://github.com/laravel/installer)
-4. composer global require [laravel/valet](https://github.com/laravel/valet)
-5. composer global require [hirak/prestissimo](https://github.com/hirak/prestissimo)
-6. valet install
-7. valet restart
+1. brew install homebrew/php/php71
+2. brew install nginx --with-http2
+3. brew install homebrew/php/composer
+4. composer global require [laravel/installer](https://github.com/laravel/installer)
+5. composer global require [laravel/valet](https://github.com/laravel/valet)
+6. composer global require [hirak/prestissimo](https://github.com/hirak/prestissimo)
+7. valet install
+8. valet restart
+
+# Bug for valet 2.0.3
+```
+sudo chown root /usr/local/Cellar/nginx/1.10.2_1/homebrew.mxcl.nginx.plist
+sudo chown root /usr/local/Cellar/php71/7.1.1_12/homebrew.mxcl.php71.plist
+sudo chown root /usr/local/Cellar/dnsmasq/2.76/homebrew.mxcl.dnsmasq.plist
+
+sudo chgrp wheel /usr/local/Cellar/nginx/1.10.2_1/homebrew.mxcl.nginx.plist
+sudo chgrp wheel /usr/local/Cellar/php71/7.1.1_12/homebrew.mxcl.php71.plist
+sudo chgrp wheel /usr/local/Cellar/dnsmasq/2.76/homebrew.mxcl.dnsmasq.plist
+```
+And this
+```
+sudo brew services restart nginx
+sudo brew services restart php71
+sudo brew services restart dnsmasq
+```
+And this
+```
+sudo killall mDNSResponder
+```
 
 # linux user
 * apt-get install git make
