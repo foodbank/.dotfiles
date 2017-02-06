@@ -93,7 +93,7 @@ B_White='\e[01;39m'
 
 if [ -f "/usr/local/bin/brew" ]; then
     export GIT_PS1_SHOWDIRTYSTATE=1
-    export HOMEBREW_GITHUB_API_TOKEN='520b42d486a487269a3f3e13a5aaa9ab1942230a'
+    export HOMEBREW_GITHUB_API_TOKEN=''
 fi    
 
 if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -112,6 +112,9 @@ elif [ $(uname) == 'Linux' ] && [ -f /etc/bash_completion ] && ! shopt -oq posix
     fi
     . /etc/bash_completion
 fi
+
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 if [ $EUID = 0 ]; then
     PS1="\[$BRed\]\u\[$White\]@\H\[\e[39m\]: \W\[$BYellow\]\$(__git_ps1)\[$B_White\] $ "
