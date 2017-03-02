@@ -27,13 +27,10 @@
 
 # Bug for valet 2.0.3
 ```
-sudo chown root /usr/local/Cellar/nginx/1.10.3/homebrew.mxcl.nginx.plist
-sudo chown root /usr/local/Cellar/php71/7.1.1_12/homebrew.mxcl.php71.plist
-sudo chown root /usr/local/Cellar/dnsmasq/2.76/homebrew.mxcl.dnsmasq.plist
+sudo chown root:wheel /usr/local/Cellar/nginx/1.10.3/homebrew.mxcl.nginx.plist
+sudo chown root:wheel /usr/local/Cellar/php71/7.1.2_13/homebrew.mxcl.php71.plist
+sudo chown root:wheel /usr/local/Cellar/dnsmasq/2.76/homebrew.mxcl.dnsmasq.plist
 
-sudo chgrp wheel /usr/local/Cellar/nginx/1.10.3/homebrew.mxcl.nginx.plist
-sudo chgrp wheel /usr/local/Cellar/php71/7.1.1_12/homebrew.mxcl.php71.plist
-sudo chgrp wheel /usr/local/Cellar/dnsmasq/2.76/homebrew.mxcl.dnsmasq.plist
 ```
 And this
 ```
