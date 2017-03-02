@@ -12,8 +12,8 @@
 
 # osx user
 1. xcode-select --install
-2. brew install bash-completion git node tmux byobu
-3. npm -g install gulp instant-markdown-d yarn
+2. brew install bash-completion git node tmux byobu yarn
+3. npm -g install gulp instant-markdown-d
 
 # Laravel developer
 1. brew install homebrew/php/php71
